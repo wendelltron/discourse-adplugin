@@ -115,7 +115,7 @@ export default Ember.Component.extend({
 						// this is terrible hackery. bleh. 
 						 var pads = document.getElementById("adsense_loader");
 						  if (pads) {
-							    ads.parentNode.removeChild(ads); }
+							    pads.parentNode.removeChild(pads); }
 						console.log("Aww shucks, thanks Tek Supporter!"); 
 					}
 				});
