@@ -112,13 +112,13 @@ export default Ember.Component.extend({
                result.forEach(function(entry) {
 					if(entry.badge.name == 'NoAds') { 
 						isTekSupport = 1;
-						console.log("Aww shucks, thanks tek supporter!"); 
+						console.log("Aww shucks, thanks Tek Supporter!"); 
 					}
 				});
-               localthis._super();
+               //localthis._super();
     });  
 
-    //this._super();
+    this._super();
   },
   
   adWrapperStyle: function() {
