@@ -112,6 +112,10 @@ export default Ember.Component.extend({
                result.forEach(function(entry) {
 					if(entry.badge.name == 'NoAds') { 
 						isTekSupport = 1;
+						// this is terrible hackery. bleh. 
+						 var pads = document.getElementById("adsense_loader");
+						  if (pads) {
+							    ads.parentNode.removeChild(ads); }
 						console.log("Aww shucks, thanks Tek Supporter!"); 
 					}
 				});
