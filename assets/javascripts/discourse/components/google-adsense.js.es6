@@ -10,7 +10,7 @@ var currentUser = Discourse.User.current();
 var publisher_id = Discourse.SiteSettings.adsense_publisher_code;
 var mobile_width = 320;
 var mobile_height = 50;
-
+var isTekSupport = 0;
 
 function splitWidthInt(value) {
     var str = value.substring(0, 3);
@@ -105,7 +105,13 @@ export default Ember.Component.extend({
     this.set('ad_height', data[this.placement]["ad_height"] );
     this.set('ad_code', data[this.placement]["ad_code"] );
     this.set('ad_mobile_code', data[this.placement]["ad_mobile_code"] );
-    this._super();
+     var localthis = this;
+    currentUser.getUserBadges().then(function(result) {
+		console.log(result);
+		
+		localthis._super();	
+	});  
+    //this._super();
   },
   
   adWrapperStyle: function() {
