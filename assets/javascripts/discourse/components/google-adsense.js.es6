@@ -1,5 +1,7 @@
 import PageTracker from 'discourse/lib/page-tracker';
 
+
+// noads badge id = 102 
 var ad_width = '';
 var ad_height = '';
 var ad_code = '';
@@ -105,12 +107,17 @@ export default Ember.Component.extend({
     this.set('ad_height', data[this.placement]["ad_height"] );
     this.set('ad_code', data[this.placement]["ad_code"] );
     this.set('ad_mobile_code', data[this.placement]["ad_mobile_code"] );
-     var localthis = this;
-    currentUser.getUserBadges().then(function(result) {
-		console.log(result);
-		
-		localthis._super();	
-	});  
+    var localthis = this;
+    Discourse.UserBadge.findByUsername(currentUser.username).then(function(result) {
+               result.forEach(function(entry) {
+					if(entry.badge.name == 'NoAds') { 
+						isTekSupport = 1;
+						console.log("Aww shucks, thanks tek supporter!"); 
+					}
+				});
+               localthis._super();
+    });  
+
     //this._super();
   },
   
@@ -135,6 +142,6 @@ export default Ember.Component.extend({
   }.property('adWrapperStyleMobile'),
 
   checkTrustLevels: function() {
-    return !((currentUser) && (currentUser.get('trust_level') > Discourse.SiteSettings.adsense_through_trust_level));
+    return !((currentUser) && (currentUser.get('trust_level') > Discourse.SiteSettings.adsense_through_trust_level) && !isTekSupport );
   }.property('trust_level'),
 });
