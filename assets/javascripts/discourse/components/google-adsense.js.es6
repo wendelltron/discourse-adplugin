@@ -108,6 +108,7 @@ export default Ember.Component.extend({
     this.set('ad_code', data[this.placement]["ad_code"] );
     this.set('ad_mobile_code', data[this.placement]["ad_mobile_code"] );
     var localthis = this;
+    if(currentUser) { 
     Discourse.UserBadge.findByUsername(currentUser.username).then(function(result) {
                result.forEach(function(entry) {
 					if(entry.badge.name == 'NoAds') { 
@@ -121,7 +122,7 @@ export default Ember.Component.extend({
 				});
                //localthis._super();
     });  
-
+    }
     this._super();
   },
   
