@@ -142,6 +142,7 @@ export default Ember.Component.extend({
   }.property('adWrapperStyleMobile'),
 
   checkTrustLevels: function() {
+	console.log("Support: " + isTekSupport); 
     return !((currentUser) && (currentUser.get('trust_level') > Discourse.SiteSettings.adsense_through_trust_level) && (isTekSupport == 0) );
   }.property('trust_level'),
 });
