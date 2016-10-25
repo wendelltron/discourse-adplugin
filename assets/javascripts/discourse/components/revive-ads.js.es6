@@ -23,7 +23,7 @@ function splitHeightInt(value) {
   return str.trim();
 }
 
-// On each page change, the child is removed and elements part of Adsense's googleads are removed/undefined.
+// On each page change, the child is removed and elements part of Adsenses googleads are removed/undefined.
 
 function changePage() {
   const ads = document.getElementById("revive_loader");
@@ -173,7 +173,7 @@ export default Ember.Component.extend({
             //console.log('Show the Ads for ' + badge.name.toLowerCase() );  // uncomment for debugging
           }
         }
-      }
+      };
 
       //Terminate by returning true if successfully looping through each Badge
       return true;
