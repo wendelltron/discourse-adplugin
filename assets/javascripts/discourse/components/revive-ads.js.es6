@@ -164,8 +164,10 @@ export default Ember.Component.extend({
       console.log(currentUser.get('badges')); // uncomment for debugging
 
       var no_ads_badges = Discourse.SiteSettings.revive_through_badge.split("|");
-      for (var badge of badges){
-        for (var no_ad_badge of no_ads_badges){
+      var badge;
+      for (badge of badges){
+	var no_ad_badge;
+        for (no_ad_badge of no_ads_badges){
           if (badge.name.toLowerCase() == no_ad_badge.toLowerCase()) {
             //console.log('Do NOT show the Ads for ' + badge.name.toLowerCase()); // uncomment for debugging
             return false;  //Uncomment to disable ad's
