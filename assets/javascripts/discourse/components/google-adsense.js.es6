@@ -22,7 +22,7 @@ function splitHeightInt(value) {
   return str.trim();
 }
 
-// On each page change, the child is removed and elements part of Adsense's googleads are removed/undefined.
+// On each page change, the child is removed and elements part of Adsenses googleads are removed/undefined.
 function changePage() {
   const ads = document.getElementById("adsense_loader");
   if (ads) {
