@@ -2,23 +2,23 @@
 
 This is the official Discourse advertising plugin.  It allows advertisements to be served by supported advertising platforms for users with a Discourse forum.
 
-**Authors**: 		[Sarah Ni](https://github.com/cyberkoi) & [Vi Nguyen](https://github.com/ladydanger)  
-**Version**: 			1.0.1		
-**Contributors**: See credits section below	
-**License**: 			MIT License		
-**Supported Discourse Version**: 1.4	
-**Supported Ad Platforms**:    
+**Authors**: 		[Sarah Ni](https://github.com/cyberkoi) & [Vi Nguyen](https://github.com/adcopywriter)
+**Version**: 			1.0.1
+**Contributors**: See credits section below
+**License**: 			MIT License
+**Supported Discourse Version**: 1.4
+**Supported Ad Platforms**:
 * [Google Adsense](http://www.google.com.au/adsense/start/why-adsense.html)
 * [Google Double Click for Publishers](https://www.google.com/dfp)
 * [Amazon Affiliates](http://affiliate-program.amazon.com) - Banner and Product Link Ads
-
+* [Revive Ad Server](https://www.revive-adserver.com/)
 
 ## Quick Start in 3 Steps
 
 This quick start shows you how to install this plugin and use it.  Recommended if you have:
 
-* A live discourse forum 
-* You have deployed your live forum using Docker.  If you're using Digital Ocean, it's likely that your forum is deployed on Docker. 
+* A live discourse forum
+* You have deployed your live forum using Docker.  If you're using Digital Ocean, it's likely that your forum is deployed on Docker.
 
 For non-docker or local development installation (those with programming experience), see **Other Installation**.
 
@@ -95,6 +95,7 @@ In this section, we go into more detail on:
 * Available Locations for Ad Display
 * Ad Sizes Supported
 * Trust Levels
+* Badges
 * Languages Supported
 
 ### Available Locations for Ad Display
@@ -103,10 +104,10 @@ The following are available locations along with a description and an image show
 
 Location Name | Description
 --- | --- | ---
-Topic List Top | Ad will appear at the header of Discourse homepage 
-Topic Above Post Stream | Ad will appear in the header of all Discourse forum topics 
-Topic Above Suggested | Ad will appear in the footer above suggested topics of all Discourse forum topics 
-Post Bottom & Nth Post | Ad will appear on the stipulated nth post within a topic.  So if you have 5 posts in a topic and you want the ad to display after on the 2nd post, put 2 in ```ad_platform_nth_post_code```.  
+Topic List Top | Ad will appear at the header of Discourse homepage
+Topic Above Post Stream | Ad will appear in the header of all Discourse forum topics
+Topic Above Suggested | Ad will appear in the footer above suggested topics of all Discourse forum topics
+Post Bottom & Nth Post | Ad will appear on the stipulated nth post within a topic.  So if you have 5 posts in a topic and you want the ad to display after on the 2nd post, put 2 in ```ad_platform_nth_post_code```.
 
 
 ![](https://www.dropbox.com/sc/rm5bcn8c85niul1/AAAUVW-hn56XtCl_XTNlE19Ra?dl=1)
@@ -117,7 +118,7 @@ This plugin supports the following ad sizes for the following locations.
 
 All locations except post bottom | Post bottom location | Mobile
 --- | --- | ---
-728 x 90 | 728 x 90 | 320 x 50 
+728 x 90 | 728 x 90 | 320 x 50
 336 x 280 | 336 x 280 |
 300 x 250 | 300 x 250 |
 970 x 90 | 970 x 90 |
@@ -126,7 +127,7 @@ All locations except post bottom | Post bottom location | Mobile
 125 x 125 | |
 180 x 150 | |
 200 x 200 | |
-250 x 250 | | 
+250 x 250 | |
 
 
 ### Trust Levels
@@ -140,6 +141,10 @@ You can use the ```ad_platform_through_trust_level``` dropdown to disable ads fo
 * 4 shows ads to everyone including elders.
 
 To find more about trust levels in Discourse, refer to [Discourse's posts on trust levels](https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/7)
+
+### Badges
+
+You can use the ```ad_platform_through_badge``` to disable ads for users with a the associated badge.
 
 ### Languages Supported
 
@@ -184,7 +189,7 @@ For example: ln -s ~/discourse-plugin-test .
 
 ## Questions or Want to Contribute?
 
-Open an Issue on this repository to start a chat.  
+Open an Issue on this repository to start a chat.
 
 
 ## Credits
@@ -198,7 +203,7 @@ Open an Issue on this repository to start a chat.
 
 
 
- 
+
 
 
 

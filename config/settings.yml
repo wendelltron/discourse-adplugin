@@ -6,89 +6,243 @@ adsense_plugin:
     client: true
     default: 2
     enum: 'TrustLevelSetting'
+  adsense_through_badge:
+    client: true
+    default: ''
+    type: list
   adsense_topic_list_top_code:
     client: true
     default: ''
+    max: 50
   adsense_mobile_topic_list_top_code:
     client: true
-    default: ''    
+    default: ''
+    max: 50
   adsense_topic_list_top_ad_sizes:
     client: true
     default: '728*90 - leaderboard'
     type: enum
     choices:
       - 728*90 - leaderboard
-      - 336*280 - large rectangle 
+      - 336*280 - large rectangle
       - 300*250 - medium rectangle
       - 970*90 - large leaderboard
-      - 468*60 - banner 
-      - 234*60 - half banner 
-      - 125*125 - button 
+      - 468*60 - banner
+      - 234*60 - half banner
+      - 125*125 - button
       - 180*150 - small rectangle
       - 200*200 - small square
       - 250*250 - square
   adsense_topic_above_post_stream_code:
     client: true
     default: ''
+    max: 50
   adsense_mobile_topic_above_post_stream_code:
     client: true
-    default: ''    
+    default: ''
+    max: 50
   adsense_topic_above_post_stream_ad_sizes:
     client: true
     default: '728*90 - leaderboard'
     type: enum
     choices:
       - 728*90 - leaderboard
-      - 336*280 - large rectangle 
+      - 336*280 - large rectangle
       - 300*250 - medium rectangle
       - 970*90 - large leaderboard
-      - 468*60 - banner 
-      - 234*60 - half banner 
-      - 125*125 - button 
+      - 468*60 - banner
+      - 234*60 - half banner
+      - 125*125 - button
       - 180*150 - small rectangle
       - 200*200 - small square
       - 250*250 - square
   adsense_topic_above_suggested_code:
     client: true
     default: ''
+    max: 50
   adsense_mobile_topic_above_suggested_code:
     client: true
     default: ''
+    max: 50
   adsense_topic_above_suggested_ad_sizes:
     client: true
     default: '728*90 - leaderboard'
     type: enum
     choices:
       - 728*90 - leaderboard
-      - 336*280 - large rectangle 
+      - 336*280 - large rectangle
       - 300*250 - medium rectangle
       - 970*90 - large leaderboard
-      - 468*60 - banner 
-      - 234*60 - half banner 
-      - 125*125 - button 
+      - 468*60 - banner
+      - 234*60 - half banner
+      - 125*125 - button
       - 180*150 - small rectangle
       - 200*200 - small square
       - 250*250 - square
-  adsense_post_bottom_code: 
+  adsense_post_bottom_code:
     client: true
     default: ''
-  adsense_mobile_post_bottom_code: 
+    max: 50
+  adsense_mobile_post_bottom_code:
     client: true
     default: ''
+    max: 50
   adsense_post_bottom_ad_sizes:
     client: true
     default: '728*90 - leaderboard'
     type: enum
     choices:
       - 728*90 - leaderboard
-      - 336*280 - large rectangle 
+      - 336*280 - large rectangle
       - 300*250 - medium rectangle
       - 970*90 - large leaderboard
-      - 468*60 - banner 
-      - 234*60 - half banner 
-  adsense_nth_post_code: 
+      - 468*60 - banner
+      - 234*60 - half banner
+  adsense_nth_post_code:
     client: true
     default: ''
+    min: 1
+
+revive_plugin:
+  revive_publisher_code:
+    client: true
+    default: ''
+  revive_through_trust_level:
+    client: true
+    default: 2
+    enum: 'TrustLevelSetting'
+  revive_through_badge:
+    client: true
+    default: ''
+    type: list
+  revive_topic_list_top_code:
+    client: true
+    default: ''
+    max: 50
+  revive_topic_list_top_zone_id:
+    client: true
+    default: ''
+    max: 50
+  revive_mobile_topic_list_top_code:
+    client: true
+    default: ''
+    max: 50
+  revive_mobile_topic_list_top_zone_id:
+    client: true
+    default: ''
+    max: 50
+  revive_topic_list_top_ad_sizes:
+    client: true
+    default: '728*90 - leaderboard'
+    type: enum
+    choices:
+      - 728*90 - leaderboard
+      - 336*280 - large rectangle
+      - 300*250 - medium rectangle
+      - 970*90 - large leaderboard
+      - 468*60 - banner
+      - 234*60 - half banner
+      - 125*125 - button
+      - 180*150 - small rectangle
+      - 200*200 - small square
+      - 250*250 - square
+  revive_topic_above_post_stream_code:
+    client: true
+    default: ''
+    max: 50
+  revive_topic_above_post_stream_zone_id:
+    client: true
+    default: ''
+    max: 50
+  revive_mobile_topic_above_post_stream_code:
+    client: true
+    default: ''
+    max: 50
+  revive_mobile_topic_above_post_stream_zone_id:
+    client: true
+    default: ''
+    max: 50
+  revive_topic_above_post_stream_ad_sizes:
+    client: true
+    default: '728*90 - leaderboard'
+    type: enum
+    choices:
+      - 728*90 - leaderboard
+      - 336*280 - large rectangle
+      - 300*250 - medium rectangle
+      - 970*90 - large leaderboard
+      - 468*60 - banner
+      - 234*60 - half banner
+      - 125*125 - button
+      - 180*150 - small rectangle
+      - 200*200 - small square
+      - 250*250 - square
+  revive_topic_above_suggested_code:
+    client: true
+    default: ''
+    max: 50
+  revive_topic_above_suggested_zone_id:
+    client: true
+    default: ''
+    max: 50
+  revive_mobile_topic_above_suggested_code:
+    client: true
+    default: ''
+    max: 50
+  revive_mobile_topic_above_suggested_zone_id:
+    client: true
+    default: ''
+    max: 50
+  revive_topic_above_suggested_ad_sizes:
+    client: true
+    default: '728*90 - leaderboard'
+    type: enum
+    choices:
+      - 728*90 - leaderboard
+      - 336*280 - large rectangle
+      - 300*250 - medium rectangle
+      - 970*90 - large leaderboard
+      - 468*60 - banner
+      - 234*60 - half banner
+      - 125*125 - button
+      - 180*150 - small rectangle
+      - 200*200 - small square
+      - 250*250 - square
+  revive_post_bottom_code:
+    client: true
+    default: ''
+    max: 50
+  revive_post_bottom_zone_id:
+    client: true
+    default: ''
+    max: 50
+  revive_mobile_post_bottom_code:
+    client: true
+    default: ''
+    max: 50
+  revive_mobile_post_bottom_zone_id:
+    client: true
+    default: ''
+    max: 50
+  revive_post_bottom_ad_sizes:
+    client: true
+    default: '728*90 - leaderboard'
+    type: enum
+    choices:
+      - 728*90 - leaderboard
+      - 336*280 - large rectangle
+      - 300*250 - medium rectangle
+      - 970*90 - large leaderboard
+      - 468*60 - banner
+      - 234*60 - half banner
+  revive_nth_post_code:
+    client: true
+    default: ''
+    min: 1
+  revive_nth_post_zone_id:
+    client: true
+    default: ''
+    min: 1
 
 dfp_plugin:
   dfp_publisher_id:
@@ -98,28 +252,55 @@ dfp_plugin:
     client: true
     default: 2
     enum: 'TrustLevelSetting'
+  dfp_through_badge:
+    client: true
+    default: ''
+    type: list
   dfp_topic_list_top_code:
     client: true
     default: ''
-  dfp_mobile_topic_list_top_code:
-    client: true
-    default: ''
+    max: 50
   dfp_topic_list_top_ad_sizes:
     client: true
     default: '728*90 - leaderboard'
     type: enum
     choices:
       - 728*90 - leaderboard
-      - 336*280 - large rectangle 
+      - 336*280 - large rectangle
       - 300*250 - medium rectangle
       - 970*90 - large leaderboard
-      - 468*60 - banner 
-      - 234*60 - half banner 
-      - 125*125 - button 
+      - 970*250 - billboard
+      - 468*60 - banner
+      - 320*50 - mobile leaderboard
+      - 160*600 - wide skyscraper
+      - 234*60 - half banner
+      - 125*125 - button
       - 180*150 - small rectangle
       - 200*200 - small square
       - 250*250 - square
-  dfp_target_topic_list_top_key_code:    
+      - 300*600 - half page ad
+      - 320*100 - large mobile banner
+  dfp_mobile_topic_list_top_code:
+    client: true
+    default: ''
+    max: 50
+  dfp_mobile_topic_list_top_ad_sizes:
+    client: true
+    default: '320*50 - mobile leaderboard'
+    type: enum
+    choices:
+      - 320*50 - mobile leaderboard
+      - 300*250 - medium rectangle
+      - 336*280 - large rectangle
+      - 160*600 - wide skyscraper
+      - 234*60 - half banner
+      - 125*125 - button
+      - 180*150 - small rectangle
+      - 200*200 - small square
+      - 250*250 - square
+      - 300*600 - half page ad
+      - 320*100 - large mobile banner
+  dfp_target_topic_list_top_key_code:
     default: ''
     type: value_list
     client: true
@@ -130,24 +311,47 @@ dfp_plugin:
   dfp_topic_above_post_stream_code:
     client: true
     default: ''
-  dfp_mobile_topic_above_post_stream_code:
-    client: true
-    default: ''
+    max: 50
   dfp_topic_above_post_stream_ad_sizes:
     client: true
     default: '728*90 - leaderboard'
     type: enum
     choices:
       - 728*90 - leaderboard
-      - 336*280 - large rectangle 
+      - 336*280 - large rectangle
       - 300*250 - medium rectangle
       - 970*90 - large leaderboard
-      - 468*60 - banner 
-      - 234*60 - half banner 
-      - 125*125 - button 
+      - 970*250 - billboard
+      - 468*60 - banner
+      - 320*50 - mobile leaderboard
+      - 160*600 - wide skyscraper
+      - 234*60 - half banner
+      - 125*125 - button
       - 180*150 - small rectangle
       - 200*200 - small square
       - 250*250 - square
+      - 300*600 - half page ad
+      - 320*100 - large mobile banner
+  dfp_mobile_topic_above_post_stream_code:
+    client: true
+    default: ''
+    max: 50
+  dfp_mobile_topic_above_post_stream_ad_sizes:
+    client: true
+    default: '320*50 - mobile leaderboard'
+    type: enum
+    choices:
+      - 320*50 - mobile leaderboard
+      - 300*250 - medium rectangle
+      - 336*280 - large rectangle
+      - 160*600 - wide skyscraper
+      - 234*60 - half banner
+      - 125*125 - button
+      - 180*150 - small rectangle
+      - 200*200 - small square
+      - 250*250 - square
+      - 300*600 - half page ad
+      - 320*100 - large mobile banner
   dfp_target_topic_above_post_stream_key_code:
     default: ''
     type: value_list
@@ -159,24 +363,47 @@ dfp_plugin:
   dfp_topic_above_suggested_code:
     client: true
     default: ''
-  dfp_mobile_topic_above_suggested_code:
-    client: true
-    default: ''  
+    max: 50
   dfp_topic_above_suggested_ad_sizes:
     client: true
     default: '728*90 - leaderboard'
     type: enum
     choices:
       - 728*90 - leaderboard
-      - 336*280 - large rectangle 
+      - 336*280 - large rectangle
       - 300*250 - medium rectangle
       - 970*90 - large leaderboard
-      - 468*60 - banner 
-      - 234*60 - half banner 
-      - 125*125 - button 
+      - 970*250 - billboard
+      - 468*60 - banner
+      - 320*50 - mobile leaderboard
+      - 160*600 - wide skyscraper
+      - 234*60 - half banner
+      - 125*125 - button
       - 180*150 - small rectangle
       - 200*200 - small square
       - 250*250 - square
+      - 300*600 - half page ad
+      - 320*100 - large mobile banner
+  dfp_mobile_topic_above_suggested_code:
+    client: true
+    default: ''
+    max: 50
+  dfp_mobile_topic_above_suggested_ad_sizes:
+    client: true
+    default: '320*50 - mobile leaderboard'
+    type: enum
+    choices:
+      - 320*50 - mobile leaderboard
+      - 300*250 - medium rectangle
+      - 336*280 - large rectangle
+      - 160*600 - wide skyscraper
+      - 234*60 - half banner
+      - 125*125 - button
+      - 180*150 - small rectangle
+      - 200*200 - small square
+      - 250*250 - square
+      - 300*600 - half page ad
+      - 320*100 - large mobile banner
   dfp_target_topic_above_suggested_key_code:
     default: ''
     type: value_list
@@ -185,26 +412,55 @@ dfp_plugin:
     default: ''
     type: value_list
     client: true
-  dfp_post_bottom_code:
-    client: true
-    default: ''
-  dfp_mobile_post_bottom_code:
-    client: true
-    default: ''  
+    max: 50
   dfp_nth_post_code:
     client: true
     default: ''
+    min: 1
+  dfp_post_bottom_code:
+    client: true
+    default: ''
+    max: 50
   dfp_post_bottom_ad_sizes:
     client: true
     default: '728*90 - leaderboard'
     type: enum
     choices:
       - 728*90 - leaderboard
-      - 336*280 - large rectangle 
+      - 336*280 - large rectangle
       - 300*250 - medium rectangle
       - 970*90 - large leaderboard
-      - 468*60 - banner 
-      - 234*60 - half banner 
+      - 970*250 - billboard
+      - 468*60 - banner
+      - 320*50 - mobile leaderboard
+      - 160*600 - wide skyscraper
+      - 234*60 - half banner
+      - 125*125 - button
+      - 180*150 - small rectangle
+      - 200*200 - small square
+      - 250*250 - square
+      - 300*600 - half page ad
+      - 320*100 - large mobile banner
+  dfp_mobile_post_bottom_code:
+    client: true
+    default: ''
+    max: 50
+  dfp_mobile_post_bottom_ad_sizes:
+    client: true
+    default: '320*50 - mobile leaderboard'
+    type: enum
+    choices:
+      - 320*50 - mobile leaderboard
+      - 300*250 - medium rectangle
+      - 336*280 - large rectangle
+      - 160*600 - wide skyscraper
+      - 234*60 - half banner
+      - 125*125 - button
+      - 180*150 - small rectangle
+      - 200*200 - small square
+      - 250*250 - square
+      - 300*600 - half page ad
+      - 320*100 - large mobile banner
   dfp_target_post_bottom_key_code:
     default: ''
     type: value_list
@@ -219,31 +475,35 @@ amazon_plugin:
     client: true
     default: 2
     enum: 'TrustLevelSetting'
+  amazon_through_badge:
+    client: true
+    default: ''
+    type: list
   amazon_topic_list_top_src_code:
     client: true
     default: ''
   amazon_topic_list_top_ad_width_code:
     client: true
-    default: '' 
+    default: ''
   amazon_topic_list_top_ad_height_code:
     client: true
     default: ''
   amazon_mobile_topic_list_top_src_code:
     client: true
     default: ''
-  amazon_mobile_topic_list_top_ad_width_code: 
+  amazon_mobile_topic_list_top_ad_width_code:
     client: true
     default: ''
-  amazon_mobile_topic_list_top_ad_height_code: 
+  amazon_mobile_topic_list_top_ad_height_code:
     client: true
     default: ''
   amazon_topic_above_post_stream_src_code:
     client: true
     default: ''
-  amazon_topic_above_post_stream_ad_width_code: 
+  amazon_topic_above_post_stream_ad_width_code:
     client: true
     default: ''
-  amazon_topic_above_post_stream_ad_height_code: 
+  amazon_topic_above_post_stream_ad_height_code:
     client: true
     default: ''
   amazon_mobile_topic_above_post_stream_src_code:
@@ -252,13 +512,13 @@ amazon_plugin:
   amazon_mobile_topic_above_post_stream_ad_width_code:
     client: true
     default: ''
-  amazon_mobile_topic_above_post_stream_ad_height_code: 
+  amazon_mobile_topic_above_post_stream_ad_height_code:
     client: true
     default: ''
-  amazon_topic_above_suggested_src_code: 
+  amazon_topic_above_suggested_src_code:
     client: true
     default: ''
-  amazon_topic_above_suggested_ad_width_code: 
+  amazon_topic_above_suggested_ad_width_code:
     client: true
     default: ''
   amazon_topic_above_suggested_ad_height_code:
@@ -276,9 +536,10 @@ amazon_plugin:
   amazon_post_bottom_src_code:
     client: true
     default: ''
-  amazon_nth_post_code: 
+  amazon_nth_post_code:
     client: true
     default: ''
+    min: 1
   amazon_post_bottom_ad_width_code:
     client: true
     default: ''
