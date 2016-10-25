@@ -1,0 +1,31 @@
+{{#if checkTrustLevelsAndBadges}}
+  {{#if site.mobileView}}
+      <div class="revive-ads-label" style={{adTitleStyleMobile}}><h2>ADVERTISEMENT</h2></div>
+      <div class="revive-ads-content" style={{adWrapperStyleMobile}}>
+          <!--/*
+            *
+            * Revive Adserver Asynchronous JS Tag
+            * - Generated with Revive Adserver v3.2.4
+            *
+            */-->
+
+          <ins data-revive-zoneid="{{ad_mobile_zone_id}}" data-revive-id="{{ad_mobile_code}}"></ins>
+          <script async src="{{publisher_url}}"></script>
+      </div>
+  {{else}}
+      <div class="revive-ads-label"><h2>ADVERTISEMENT</h2></div>
+      <div class="revive-ads-content" style={{adWrapperStyle}}>
+          <!--/*
+            *
+            * Revive Adserver Asynchronous JS Tag
+            * - Generated with Revive Adserver v3.2.4
+            *
+            */-->
+
+          <ins data-revive-zoneid="{{ad_zone_id}}" data-revive-id="{{ad_code}}"></ins>
+          <script>
+              (asyncjs = window.asyncjs || []).push({});
+          </script>
+      </div>
+  {{/if}}
+{{/if}}
